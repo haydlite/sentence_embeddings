@@ -83,12 +83,12 @@ if __name__ == "__main__":
 
     print('Comparing snippets within ' + set_of_articles1 + ' with themselves...')
     sim1_1 = compute_sim_score(embeds1, embeds1, same=True)
-    print('Within ' + set_of_articles1 + 'snippets have an average similarity score of '
+    print('Within ' + set_of_articles1 + ', snippets have an average similarity score of '
           + str(sim1_1))
 
     print('Comparing snippets within ' + set_of_articles1 + ' with themselves...')
-    sim2_2 = compute_sim_score(embeds1, embeds2, same=True)
-    print('Within ' + set_of_articles1 + 'snippets have an average similarity score of '
+    sim2_2 = compute_sim_score(embeds2, embeds2, same=True)
+    print('Within ' + set_of_articles2 + ', snippets have an average similarity score of '
           + str(sim2_2))
 
     print('Comparing snippets between ' + set_of_articles1 + ' and ' + set_of_articles2 + '...')
